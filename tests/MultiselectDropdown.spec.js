@@ -19,9 +19,7 @@ test('Multiselect dropown Tests', async ({page}) => {
     
     //3) Check presence of value in multiselect dropdown
    const content  = await page.locator('#colors').textContent()
-   expect(content.includes('Black')).toBeTruthy()
-   
-
+   expect(content.includes('Black')).toBeTruthy();
 
     await page.waitForTimeout(5000)
 

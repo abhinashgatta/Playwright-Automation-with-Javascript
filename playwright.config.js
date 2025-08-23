@@ -79,3 +79,9 @@ export default defineConfig({
   // },
 });
 
+module.exports = {
+  reporter: [
+    ['list'],
+    ['junit', { outputFile: 'test-results/results.xml' }]
+  ],
+};
